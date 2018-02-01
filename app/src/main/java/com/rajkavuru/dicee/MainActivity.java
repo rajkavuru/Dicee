@@ -31,13 +31,12 @@ public class MainActivity extends AppCompatActivity {
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("Dicee", "Button pressed!");
                 Random randomNumberGen = new Random();
                 int number = randomNumberGen.nextInt(6);
-                Log.d("Dicee", "random 1:"+number);
+                Log.d("Dicee", "number on left dice is:"+number);
                 leftDice.setImageResource(diceArray[number]);
                 number = randomNumberGen.nextInt(6);
-                Log.d("Dicee", "random 2:"+number);
+                Log.d("Dicee", "number on right dice is:"+number);
                 rightDice.setImageResource(diceArray[number]);
 
             }
